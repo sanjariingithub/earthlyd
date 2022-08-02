@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>home page </title>
+    <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:#6B8E23;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: rgb(37, 129, 25);
+      }
+      p.normal {
+        font-style: oblique;
+     color: #fff;
+     text-align: center;
+     font-size: 40px;
+     text-decoration: underline;
+}
+.search{
+    border: 1px solid rgb(44, 43, 38);     
+    width: 30%;
+    margin: 0;
+    padding: 14px; 
+}
+span.a {
+  display: inline-block; 
+  width: 100px;
+  height: 100px;
+  padding: 55px;
+  border: 8px solid #6B8E23;  
+  background-color: #fff;
+  text-align: center; 
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 55px;
+  border: 8px solid #6B8E23;    
+  background-color: #fff; 
+  text-align: center;
+}
+
+span.c {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 55px;
+  border: 8px solid #6B8E23;    
+  background-color: #fff; 
+  text-align: center;
+}
+.category{
+    font-style: oblique;
+     color: rgb(114, 148, 117);
+     text-align: center;
+     font-size: 40px;
+     text-decoration: underline;
+}
+ #name{
+    font-style: oblique;
+     color:#6B8E23 ;
+     text-align: center;
+     font-size: 40px;
+     text-decoration: underline;
+}
+#arriname{
+    font-style: oblique;
+     color:#6B8E23 ;
+     text-align: center;
+     font-size: 40px;
+     text-decoration: underline;
+
+}
+.mySlides {
+  position:relative;
+margin-left:350px;
+margin-right:50px;
+  display: contents;
+  }
+  span.a1 {
+  display: inline-block; 
+  width: 100px;
+  height: 100px;
+  padding: 55px;
+  border: 8px solid #6B8E23;  
+  background-color: #fff;
+  text-align: center;
+  text-size-adjust: 122px; 
+}
+.footer-area{
+    background-color: rgb(139, 182, 158);
+    padding: 20px 30px;
+    text-align: center;
+}
+.footer-area h2{
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.footer-area p{
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.footer-bottom-area{
+    padding: 20px 0;
+    text-align: center;
+    font-size:18px;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+      </style>
+      </head>
+      <body>
+        
+      <div>
+        
+      <ul>
+        <p class="normal"><i class="fa fa-pagelines" style="font-size:50px "></i>  EARTHLY DELIGHT</p>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#name">Category</a></li>
+        <li><a href="#arriname">Feature</a></li>
+        <li><a href="#about">Auction</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#about">Contact</a></li>
+        <input class = "search" style="float:center" type="text" placeholder="Search..">
+        <li style="float:right"><a href=""><i class="fa fa-shopping-cart" style="font-size:26px "></i></a></li>
+        <li style="float:right"><a href=""><i class="fa fa-heart-o" style="font-size:26px "></i></a></li>
+        <li style="float:right"><a href=""><i class="fa fa-user-circle-o" style="font-size:26px "></i></a></li>
+      </ul>
+    </div>
+    <div class="category">
+        <h3 id="name">Category</h3>
+        <span class="a">Fruits <img src="mango.jpg" height="200px"></span>
+        <span class="b">Flowers <img src="flower.jpg" height="200px" > </span>
+        <span class="c">Bonsai  <img src="bonsai.jpg" height="200px"></span>
+    </div>
+    <div class="new arrivales">
+        <p id="arriname">New Arrival</p>
+    </div>
+    <div class="w3-content w3-section" style="max-width:700px" >
+      <img class="mySlides" src="apple.jpg" style="width:100%">
+        <img class="mySlides" src="mango.jpg" style="width:100%">
+        <img class="mySlides" src="marigolds.jpg" style="width:100%">
+        <img class="mySlides" src="bonsai.jpg" style="width:100%">
+      </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+     <div class="category">
+      <h3 id="name">Auction</h3>
+      <span class="a1" style="font-size: 21px;">here we will show our rare additions </span>
+      </div>
+      <div class="category">
+        <h3 id="name">Review</h3>
+        <span class="a">Fruits <i class="fa fa-star" style="font-size:26px"></i><i class="fa fa-star" style="font-size:26px"></i><i class="fa fa-star-half-o" style="font-size:26px"></i></span>
+        <span class="b">Flowers <i class="fa fa-star" style="font-size:26px"></i><i class="fa fa-star" style="font-size:26px"></i><i class="fa fa-star" style="font-size:26px"></i> </span>
+        <span class="c">Bonsai <i class="fa fa-star" style="font-size:26px"></i><i class="fa fa-star" style="font-size:26px"></i><i class="fa fa-star" style="font-size:26px"></i></span>
+    </div> <br>
+    <div class="footer-area">
+      <h2>Contact</h2>
+      <p>earthly delight </p>
+      <p> phone:0125212254</p>
+      <p>email= info@es.ac.bd</p>
+  </div>
+  <footer class="footer-bottom-area">
+      <p>&copy;All Rights Reserved</p>
+  </footer>   
+</body>
+</html>
